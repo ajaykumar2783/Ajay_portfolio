@@ -1697,6 +1697,78 @@
       .service-card:hover {
         box-shadow: 0 25px 70px rgba(255, 200, 61, 0.2);
       }
+      /* Profile Image Responsive Fix */
+      .profile-img {
+        width: min(425px, 80vw);
+        height: min(425px, 80vw);
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      /* Tablet */
+      @media (max-width: 768px) {
+        .hero-image {
+          height: 380px;
+          align-items: center;
+          margin-top: 10px;
+        }
+
+        .profile-img {
+          width: 320px;
+          height: 320px;
+          margin-bottom: 0;
+        }
+
+        .planet {
+          width: 300px;
+          height: 300px;
+          top: 40px;
+        }
+
+        .orbit {
+          width: 360px;
+          height: 140px;
+          top: 120px;
+        }
+      }
+
+      /* Mobile */
+      @media (max-width: 480px) {
+        .hero-image {
+          height: 310px;
+          margin-top: 0;
+        }
+
+        .profile-img {
+          width: 250px;
+          height: 250px;
+          margin-bottom: 0;
+        }
+
+        .planet {
+          width: 230px;
+          height: 230px;
+          top: 35px;
+        }
+
+        .orbit {
+          width: 285px;
+          height: 105px;
+          top: 110px;
+        }
+      }
+
+      /* Very Small Mobile */
+      @media (max-width: 360px) {
+        .profile-img {
+          width: 220px;
+          height: 220px;
+        }
+
+        .hero-image {
+          height: 280px;
+        }
+      }
     </style>
   </head>
 

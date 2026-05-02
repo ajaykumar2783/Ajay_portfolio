@@ -22,11 +22,7 @@ html {
 body {
   font-family: Inter, Poppins, Arial, sans-serif;
   background:
-    radial-gradient(
-      circle at 75% 8%,
-      rgba(255, 196, 57, 0.2),
-      transparent 25%
-    ),
+    radial-gradient(circle at 75% 8%, rgba(255, 196, 57, 0.2), transparent 25%),
     radial-gradient(
       circle at 10% 20%,
       rgba(255, 196, 57, 0.07),

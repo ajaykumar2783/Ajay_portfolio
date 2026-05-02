@@ -355,12 +355,17 @@
       .profile-img {
         position: relative;
         z-index: 2;
-        width: 500px;
-        border-radius: 20px;
+        width: 425px; /* keep equal width & height */
+        height: 420px;
+        object-fit: cover; /* important for proper cropping */
+        border-radius: 50%; /* makes it circle */
         filter: drop-shadow(0 35px 55px rgba(0, 0, 0, 0.65));
-        animation: float 4s ease-in-out infinite;
+        margin-bottom: 100px;
       }
-
+      .profile-img {
+        border: 4px solid rgba(255, 200, 61, 0.6);
+        box-shadow: 0 0 40px rgba(255, 200, 61, 0.4);
+      }
       .tech-strip {
         margin-top: -20px;
         border: 1px solid var(--border);
@@ -1161,49 +1166,49 @@
         }
       }
       .process-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
 
-.process-card {
-  border: 1px solid var(--border);
-  background: var(--card);
-  border-radius: 16px;
-  padding: 24px;
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(14px);
-  transition: 0.25s ease;
-}
+      .process-card {
+        border: 1px solid var(--border);
+        background: var(--card);
+        border-radius: 16px;
+        padding: 24px;
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(14px);
+        transition: 0.25s ease;
+      }
 
-.process-card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(255, 200, 61, 0.55);
-}
+      .process-card:hover {
+        transform: translateY(-6px);
+        border-color: rgba(255, 200, 61, 0.55);
+      }
 
-.process-number {
-  width: 42px;
-  height: 42px;
-  display: grid;
-  place-items: center;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #ffd95c, #ffb72d);
-  color: #111;
-  font-weight: 900;
-  margin-bottom: 16px;
-}
+      .process-number {
+        width: 42px;
+        height: 42px;
+        display: grid;
+        place-items: center;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #ffd95c, #ffb72d);
+        color: #111;
+        font-weight: 900;
+        margin-bottom: 16px;
+      }
 
-.process-card p {
-  color: var(--muted);
-  line-height: 1.7;
-  font-size: 14px;
-}
+      .process-card p {
+        color: var(--muted);
+        line-height: 1.7;
+        font-size: 14px;
+      }
 
-@media (max-width: 980px) {
-  .process-grid {
-    grid-template-columns: 1fr;
-  }
-}
+      @media (max-width: 980px) {
+        .process-grid {
+          grid-template-columns: 1fr;
+        }
+      }
     </style>
   </head>
 

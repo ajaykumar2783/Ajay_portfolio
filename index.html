@@ -355,10 +355,10 @@
       .profile-img {
         position: relative;
         z-index: 2;
-        width: 425px; /* keep equal width & height */
+        width: 425px;
         height: 420px;
-        object-fit: cover; /* important for proper cropping */
-        border-radius: 50%; /* makes it circle */
+        object-fit: cover;
+        border-radius: 50%;
         filter: drop-shadow(0 35px 55px rgba(0, 0, 0, 0.65));
         margin-bottom: 100px;
       }
@@ -368,6 +368,7 @@
       }
       .tech-strip {
         margin-top: -20px;
+
         border: 1px solid var(--border);
         background: linear-gradient(
           180deg,
@@ -1209,10 +1210,498 @@
           grid-template-columns: 1fr;
         }
       }
+      /* Home Page Animations */
+
+      .hero-content {
+        animation: slideLeft 0.9s ease forwards;
+      }
+
+      .hero-image {
+        animation: slideRight 0.9s ease forwards;
+      }
+
+      .eyebrow {
+        animation: fadeDown 0.8s ease forwards;
+      }
+
+      .hero h1 {
+        animation: fadeUp 0.9s ease forwards;
+      }
+
+      .hero h2 {
+        animation: fadeUp 1s ease forwards;
+      }
+
+      .hero p {
+        animation: fadeUp 1.1s ease forwards;
+      }
+
+      .hero-tags span {
+        animation: popIn 0.6s ease forwards;
+      }
+
+      .hero-buttons {
+        animation: fadeUp 1.2s ease forwards;
+      }
+
+      .clients {
+        animation: fadeUp 1.3s ease forwards;
+      }
+
+      .planet {
+        animation: pulseGlow 4s ease-in-out infinite;
+      }
+
+      .orbit {
+        animation: orbitMove 7s linear infinite;
+      }
+
+      .profile-img {
+        animation:
+          float 4s ease-in-out infinite,
+          profileGlow 3s ease-in-out infinite;
+      }
+
+      .tech-strip {
+        animation: fadeUp 1.4s ease forwards;
+      }
+
+      /* Hover Effects */
+      .hero-tags span:hover {
+        transform: translateY(-4px) scale(1.05);
+        box-shadow: 0 8px 24px rgba(255, 200, 61, 0.25);
+      }
+
+      .btn:hover {
+        transform: translateY(-4px) scale(1.03);
+      }
+
+      .avatars img {
+        transition: 0.3s ease;
+      }
+
+      .avatars img:hover {
+        transform: translateY(-6px) scale(1.15);
+        z-index: 5;
+      }
+
+      /* Keyframes */
+      @keyframes slideLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-55px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes slideRight {
+        from {
+          opacity: 0;
+          transform: translateX(55px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(35px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeDown {
+        from {
+          opacity: 0;
+          transform: translateY(-25px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes popIn {
+        from {
+          opacity: 0;
+          transform: scale(0.75);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes pulseGlow {
+        0%,
+        100% {
+          box-shadow: 0 0 70px rgba(255, 190, 39, 0.35);
+        }
+        50% {
+          box-shadow: 0 0 130px rgba(255, 190, 39, 0.75);
+        }
+      }
+
+      @keyframes orbitMove {
+        from {
+          transform: rotate(-22deg);
+        }
+        to {
+          transform: rotate(338deg);
+        }
+      }
+
+      @keyframes profileGlow {
+        0%,
+        100% {
+          filter: drop-shadow(0 30px 50px rgba(0, 0, 0, 0.65));
+        }
+        50% {
+          filter: drop-shadow(0 35px 70px rgba(255, 200, 61, 0.45));
+        }
+      }
+      /* Home Page Animations */
+
+      .hero-content {
+        animation: slideLeft 0.9s ease forwards;
+      }
+
+      .hero-image {
+        animation: slideRight 0.9s ease forwards;
+      }
+
+      .eyebrow {
+        animation: fadeDown 0.8s ease forwards;
+      }
+
+      .hero h1 {
+        animation: fadeUp 0.9s ease forwards;
+      }
+
+      .hero h2 {
+        animation: fadeUp 1s ease forwards;
+      }
+
+      .hero p {
+        animation: fadeUp 1.1s ease forwards;
+      }
+
+      .hero-tags span {
+        animation: popIn 0.6s ease forwards;
+      }
+
+      .hero-buttons {
+        animation: fadeUp 1.2s ease forwards;
+      }
+
+      .clients {
+        animation: fadeUp 1.3s ease forwards;
+      }
+
+      .planet {
+        animation: pulseGlow 4s ease-in-out infinite;
+      }
+
+      .orbit {
+        animation: orbitMove 7s linear infinite;
+      }
+
+      .profile-img {
+        animation:
+          float 4s ease-in-out infinite,
+          profileGlow 3s ease-in-out infinite;
+      }
+
+      .tech-strip {
+        animation: fadeUp 1.4s ease forwards;
+      }
+
+      /* Hover Effects */
+      .hero-tags span:hover {
+        transform: translateY(-4px) scale(1.05);
+        box-shadow: 0 8px 24px rgba(255, 200, 61, 0.25);
+      }
+
+      .btn:hover {
+        transform: translateY(-4px) scale(1.03);
+      }
+
+      .avatars img {
+        transition: 0.3s ease;
+      }
+
+      .avatars img:hover {
+        transform: translateY(-6px) scale(1.15);
+        z-index: 5;
+      }
+
+      /* Keyframes */
+      @keyframes slideLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-55px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes slideRight {
+        from {
+          opacity: 0;
+          transform: translateX(55px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(35px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeDown {
+        from {
+          opacity: 0;
+          transform: translateY(-25px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes popIn {
+        from {
+          opacity: 0;
+          transform: scale(0.75);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes pulseGlow {
+        0%,
+        100% {
+          box-shadow: 0 0 70px rgba(255, 190, 39, 0.35);
+        }
+        50% {
+          box-shadow: 0 0 130px rgba(255, 190, 39, 0.75);
+        }
+      }
+
+      @keyframes orbitMove {
+        from {
+          transform: rotate(-22deg);
+        }
+        to {
+          transform: rotate(338deg);
+        }
+      }
+
+      @keyframes profileGlow {
+        0%,
+        100% {
+          filter: drop-shadow(0 30px 50px rgba(0, 0, 0, 0.65));
+        }
+        50% {
+          filter: drop-shadow(0 35px 70px rgba(255, 200, 61, 0.45));
+        }
+      }
+      .typing-text {
+        display: inline-block;
+        color: var(--gold);
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 3px solid var(--gold);
+        animation:
+          typing 4s steps(38) infinite alternate,
+          blink 0.7s infinite;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 38ch;
+        }
+      }
+
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+      .project-card {
+        position: relative;
+      }
+
+      .project-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          120deg,
+          transparent,
+          rgba(255, 200, 61, 0.12),
+          transparent
+        );
+        transform: translateX(-100%);
+        transition: 0.6s ease;
+        pointer-events: none;
+      }
+
+      .project-card:hover::before {
+        transform: translateX(100%);
+      }
+      .tech {
+        transition: 0.3s ease;
+      }
+
+      .tech:hover {
+        transform: translateY(-8px) scale(1.08);
+        color: var(--gold);
+      }
+      .btn.primary,
+      .hire-btn {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .btn.primary::before,
+      .hire-btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -90%;
+        width: 60%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.45),
+          transparent
+        );
+        transform: skewX(-20deg);
+      }
+
+      .btn.primary:hover::before,
+      .hire-btn:hover::before {
+        animation: shine 0.8s ease;
+      }
+
+      @keyframes shine {
+        from {
+          left: -90%;
+        }
+        to {
+          left: 130%;
+        }
+      }
+      /* Tablet */
+      @media (max-width: 768px) {
+        .profile-img {
+          max-width: 320px;
+        }
+      }
+
+      /* Mobile */
+      @media (max-width: 480px) {
+        .profile-img {
+          max-width: 260px;
+        }
+      }
+
+      /* Small mobile */
+      @media (max-width: 360px) {
+        .profile-img {
+          max-width: 220px;
+        }
+      }
+      @keyframes rotateBorder {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .cursor-glow {
+        position: fixed;
+        width: 12px;
+        height: 12px;
+        background: #ffc83d;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+        opacity: 0.6;
+        filter: blur(6px);
+        animation: fadeGlow 0.6s linear forwards;
+      }
+
+      @keyframes fadeGlow {
+        to {
+          transform: scale(4);
+          opacity: 0;
+        }
+      }
+      @media (max-width: 768px) {
+        .hero {
+          padding-top: 20px;
+          gap: 10px;
+        }
+
+        .hero-content {
+          text-align: center;
+        }
+
+        .hero p {
+          margin-inline: auto;
+        }
+
+        .hero-image {
+          margin-top: -40px;
+        }
+      }
+      #progress-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #ffd95c, #ffb72d);
+        width: 0%;
+        z-index: 9999;
+      }
+      .project-card:hover,
+      .service-card:hover {
+        box-shadow: 0 25px 70px rgba(255, 200, 61, 0.2);
+      }
     </style>
   </head>
 
   <body>
+    <div id="progress-bar"></div>
     <a
       class="whatsapp-btn"
       href="https://wa.me/919980492243"
@@ -1248,7 +1737,11 @@
         <div class="hero-content">
           <div class="eyebrow">HELLO, I'M</div>
           <h1>Ajay Kumar</h1>
-          <h2><span>Full Stack Developer</span> | SDE1 | Freelancer</h2>
+          <h2>
+            <span class="typing-text"
+              >Full Stack Developer | SDE1 | Freelancer</span
+            >
+          </h2>
 
           <p>
             I help businesses build modern, high-converting websites,
@@ -1878,6 +2371,60 @@
 
       window.addEventListener("scroll", revealOnScroll);
       window.addEventListener("load", revealOnScroll);
+      const dynamicText = document.querySelector(".dynamic-text");
+
+      const words = [
+        "Websites",
+        "Dashboards",
+        "Automation Tools",
+        "Full Stack Apps",
+        "Freelance Projects",
+      ];
+
+      let wordIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+
+      function typeEffect() {
+        const currentWord = words[wordIndex];
+
+        if (isDeleting) {
+          dynamicText.textContent = currentWord.substring(0, charIndex - 1);
+          charIndex--;
+        } else {
+          dynamicText.textContent = currentWord.substring(0, charIndex + 1);
+          charIndex++;
+        }
+
+        let speed = isDeleting ? 60 : 100;
+
+        if (!isDeleting && charIndex === currentWord.length) {
+          speed = 1200;
+          isDeleting = true;
+        }
+
+        if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+          speed = 400;
+        }
+
+        setTimeout(typeEffect, speed);
+      }
+
+      typeEffect();
+      window.addEventListener("scroll", () => {
+        const scroll = document.documentElement.scrollTop;
+        const height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+
+        const scrolled = (scroll / height) * 100;
+        document.getElementById("progress-bar").style.width = scrolled + "%";
+      });
+      window.addEventListener("scroll", () => {
+        navLinks.classList.remove("show");
+      });
     </script>
   </body>
 </html>
